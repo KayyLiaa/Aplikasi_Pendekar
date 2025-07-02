@@ -14,7 +14,7 @@ export default function Dashboard() {
         </div>
         <nav className="space-y-2">
           <Link href="/dashboard">
-            <span className={`block px-4 py-2 rounded ${router.pathname === '/dashboard' ? 'bg-green-600 text-white' : 'hover:bg-gray-100 text-gray-800'}`}>
+            <span className={`block px-4 py-2 rounded ${router.pathname === '/dashboard' ? 'bg-green-600 text-black' : 'hover:bg-gray-100 text-gray-800'}`}>
               Dashboard
             </span>
           </Link>

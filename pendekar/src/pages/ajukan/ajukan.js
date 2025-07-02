@@ -25,12 +25,12 @@ export default function AjukanPermohonan() {
         </div>
         <nav className="space-y-2">
           <Link href="/dashboard">
-            <span className={`block px-4 py-2 rounded ${isActive('/dashboard') ? 'bg-green-600 text-white' : 'hover:bg-gray-100 text-gray-800'}`}>
+            <span className={`block px-4 py-2 rounded ${isActive('/dashboard') ? 'bg-green-600 text-black' : 'hover:bg-gray-100 text-gray-800'}`}>
               Dashboard
             </span>
           </Link>
           <Link href="/permohonan">
-            <span className={`block px-4 py-2 rounded ${isActive('/permohonan') ? 'bg-green-600 text-white' : 'hover:bg-gray-100 text-gray-800'}`}>
+            <span className={`block px-4 py-2 rounded ${isActive('/permohonan') ? 'bg-green-600 text-black' : 'hover:bg-gray-100 text-gray-800'}`}>
               Permohonan Saya
             </span>
           </Link>
@@ -44,15 +44,19 @@ export default function AjukanPermohonan() {
 
       {/* Main Content */}
       <main className="flex-1 p-6 overflow-auto">
-        <h1 className="text-xl font-bold mb-6">Ajukan Permohonan Surat Baru</h1>
+        <h1 className="text-xl font-bold mb-6 text-black">Ajukan Permohonan Surat Baru</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {suratList.map((surat) => (
             <Link key={surat.slug} href={`/ajukan/${surat.slug}`}>
-              <div className="bg-white border rounded-lg p-6 text-center hover:shadow-md transition cursor-pointer">
-                <div className="text-4xl mb-3 text-gray-500">✉️</div>
-                <h2 className="font-semibold text-sm mb-1">{surat.nama}</h2>
-                <p className="text-gray-600 text-sm">Ajukan Surat</p>
+              <div className="bg-white border border-black rounded-lg p-6 text-center hover:shadow-lg shadow transition cursor-pointer">
+                <div className="flex justify-center mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v4a2 2 0 002 2h2m4 0v6m0 0l-2-2m2 2l2-2" />
+                  </svg>
+                </div>
+                <h2 className="font-semibold text-sm text-black mb-1">{surat.nama}</h2>
+                <p className="text-black text-sm">Ajukan Surat</p>
               </div>
             </Link>
           ))}
