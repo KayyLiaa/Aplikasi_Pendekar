@@ -66,7 +66,7 @@ export default function PermohonanSaya() {
               <tr>
                 <td className="px-4 py-2 border-b">Surat Keterangan Usaha</td>
                 <td className="px-4 py-2 border-b">
-                  <span className="bg-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs">Dikirim</span>
+                  <span className="bg-yellow-200 text-yelnlow-800 px-2 py-1 rounded text-xs">Dikirim</span>
                 </td>
                 <td className="px-4 py-2 border-b">Pengajuan sudah dikirim</td>
                 <td className="px-4 py-2 border-b">16 Juli 2024</td>
