@@ -1,24 +1,30 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function PermohonanSaya() {
+  const router = useRouter();
+
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen bg-gray-50">
+      
       {/* Sidebar */}
-      <aside className="w-60 bg-white border-r p-4">
-        <div className="text-green-700 font-bold text-xl mb-8">🛡️ Pendekar</div>
+      <aside className="w-64 bg-white border-r p-6">
+        <div className="text-green-600 font-bold text-lg mb-8 flex items-center gap-2">
+          🛡️ Pendekar
+        </div>
         <nav className="space-y-2">
           <Link href="/dashboard">
-            <span className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">
+            <span className={`block px-4 py-2 rounded ${router.pathname === '/dashboard' ? 'bg-green-600 text-white' : 'hover:bg-gray-100 text-gray-800'}`}>
               Dashboard
             </span>
           </Link>
           <Link href="/permohonan">
-            <span className="block px-4 py-2 bg-green-100 text-green-700 rounded font-semibold">
+            <span className={`block px-4 py-2 rounded ${router.pathname === '/permohonan' ? 'bg-green-600 text-white' : 'hover:bg-gray-100 text-gray-800'}`}>
               Permohonan Saya
             </span>
           </Link>
           <Link href="/ajukan">
-            <span className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">
+            <span className={`block px-4 py-2 rounded ${router.pathname === '/ajukan' ? 'bg-green-600 text-white' : 'hover:bg-gray-100 text-gray-800'}`}>
               Ajukan Permohonan
             </span>
           </Link>
@@ -26,7 +32,7 @@ export default function PermohonanSaya() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 bg-gray-50 p-6 overflow-auto">
+      <main className="flex-1 p-6 overflow-auto">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-xl font-semibold">Permohonan Saya</h1>
           <Link href="/ajukan">
