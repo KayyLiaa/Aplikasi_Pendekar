@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Dashboard() {
   return (
     <div className="flex h-screen bg-gray-50">
@@ -8,9 +10,15 @@ export default function Dashboard() {
           <span className="text-green-600">🛡️</span> Pendekar
         </div>
         <nav className="flex flex-col gap-2 px-4">
-          <a href="#" className="bg-green-600 text-white px-4 py-2 rounded">Dashboard</a>
-          <a href="#" className="px-4 py-2 hover:bg-gray-100 rounded">Permohonan Saya</a>
-          <a href="#" className="px-4 py-2 hover:bg-gray-100 rounded">Ajukan Permohonan</a>
+          <Link href="/dashboard">
+            <span className="bg-green-600 text-white px-4 py-2 rounded block">Dashboard</span>
+          </Link>
+          <Link href="/permohonan">
+            <span className="px-4 py-2 hover:bg-gray-100 rounded block">Permohonan Saya</span>
+          </Link>
+          <Link href="/ajukan">
+            <span className="px-4 py-2 hover:bg-gray-100 rounded block">Ajukan Permohonan</span>
+          </Link>
         </nav>
       </div>
 
@@ -50,7 +58,9 @@ export default function Dashboard() {
               <h2 className="font-bold">Permohonan Surat Terbaru</h2>
               <p className="text-sm text-gray-500">Beberapa permohonan surat terbaru</p>
             </div>
-            <button className="text-green-600 hover:underline">Lihat Semua</button>
+            <Link href="/permohonan">
+              <button className="text-green-600 hover:underline">Lihat Semua</button>
+            </Link>
           </div>
 
           <table className="w-full text-left">
