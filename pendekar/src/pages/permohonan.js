@@ -23,7 +23,7 @@ export default function PermohonanSaya() {
               Permohonan Saya
             </span>
           </Link>
-          <Link href="/ajukan">
+          <Link href="/ajukan"> 
             <span className={`block px-4 py-2 rounded ${router.pathname === '/ajukan' ? 'bg-green-600 text-white' : 'hover:bg-gray-100 text-gray-800'}`}>
               Ajukan Permohonan
             </span>

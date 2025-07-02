@@ -32,13 +32,13 @@ export default function TidakMampuForm() {
             <h2 className="font-semibold text-sm mb-2">Data Diri</h2>
             <p className="text-xs text-gray-500 mb-4">Informasi data diri penduduk yang bersangkutan</p>
             <div className="grid grid-cols-2 gap-4 mb-2">
-              <input type="text" placeholder="NIK" className="border px-3 py-2 rounded" defaultValue="3204360000000002" />
-              <input type="text" placeholder="No. KK" className="border px-3 py-2 rounded" defaultValue="3204360000000002" />
-              <input type="text" placeholder="Nama" className="col-span-2 border px-3 py-2 rounded" defaultValue="Risma Muchini" />
-              <input type="text" placeholder="Agama" className="border px-3 py-2 rounded" defaultValue="Islam" />
-              <input type="text" placeholder="Jenis Kelamin" className="border px-3 py-2 rounded" defaultValue="L" />
-              <input type="text" placeholder="Tempat Lahir" className="border px-3 py-2 rounded" defaultValue="Bandung" />
-              <input type="text" placeholder="Tanggal Lahir" className="border px-3 py-2 rounded" defaultValue="1 Januari 2000" />
+              <input type="text" placeholder="NIK" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="No. KK" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Nama" className="col-span-2 border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Agama" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Jenis Kelamin" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Tempat Lahir" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Tanggal Lahir" className="border px-3 py-2 rounded" defaultValue="" />
             </div>
           </div>
 
@@ -47,14 +47,14 @@ export default function TidakMampuForm() {
             <h2 className="font-semibold text-sm mb-2">Alamat</h2>
             <p className="text-xs text-gray-500 mb-4">Informasi alamat penduduk yang bersangkutan</p>
             <div className="grid grid-cols-2 gap-4 mb-2">
-              <input type="text" placeholder="Alamat" className="col-span-2 border px-3 py-2 rounded" defaultValue="Kp. ABCD" />
-              <input type="text" placeholder="RT" className="border px-3 py-2 rounded" defaultValue="002" />
-              <input type="text" placeholder="RW" className="border px-3 py-2 rounded" defaultValue="001" />
-              <input type="text" placeholder="Desa" className="border px-3 py-2 rounded" defaultValue="Karyalaksana" />
-              <input type="text" placeholder="Kecamatan" className="border px-3 py-2 rounded" defaultValue="Ibun" />
-              <input type="text" placeholder="Kab/Kota" className="border px-3 py-2 rounded" defaultValue="Kab. Bandung" />
-              <input type="text" placeholder="Provinsi" className="border px-3 py-2 rounded" defaultValue="Jawa Barat" />
-              <input type="text" placeholder="Kewarganegaraan" className="border px-3 py-2 rounded" defaultValue="WNI" />
+              <input type="text" placeholder="Alamat" className="col-span-2 border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="RT" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="RW" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Desa" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Kecamatan" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Kab/Kota" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Provinsi" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Kewarganegaraan" className="border px-3 py-2 rounded" defaultValue="" />
             </div>
           </div>
 
@@ -63,9 +63,9 @@ export default function TidakMampuForm() {
             <h2 className="font-semibold text-sm mb-2">Pendidikan dan Pekerjaan</h2>
             <p className="text-xs text-gray-500 mb-4">Informasi pendidikan dan pekerjaan</p>
             <div className="grid grid-cols-2 gap-4 mb-2">
-              <input type="text" placeholder="Pendidikan Terakhir" className="border px-3 py-2 rounded" defaultValue="Diploma IV/Strata I" />
-              <input type="text" placeholder="Pendidikan Ditempuh" className="border px-3 py-2 rounded" defaultValue="Tidak Menyatakan" />
-              <input type="text" placeholder="Pekerjaan" className="col-span-2 border px-3 py-2 rounded" defaultValue="Pegawai Negeri Sipil" />
+              <input type="text" placeholder="Pendidikan Terakhir" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Pendidikan Ditempuh" className="border px-3 py-2 rounded" defaultValue="" />
+              <input type="text" placeholder="Pekerjaan" className="col-span-2 border px-3 py-2 rounded" defaultValue="" />
             </div>
           </div>
 
